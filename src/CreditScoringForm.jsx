@@ -158,7 +158,7 @@ export default function CreditScoringForm() {
       }
   
       try {
-        const response = await axios.post('/calculate-score', formData);
+        const response = await axios.post('http://lamgs.io.vn/calculate-score', formData);
         setResult(response.data);
         setErrorMsg("");
       } catch (err) {
